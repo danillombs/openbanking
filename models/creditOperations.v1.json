@@ -113,8 +113,74 @@
         }
       }
     },
-    "": {
+    "operationRateInformation": {
+      "type": "object",
+      "properties": {
+        "index": {
+          "type": "string"
+        },
+        "rateIndexType": {
+          "type": "string"
+        },
+        "periodicity": {
+          "type": "string"
+        },
+        "interestType": {
+          "type": "string"
+        },
+        "calculationBasis": {
+          "type": "string"
+        },
+        "additionalInformation": {
+          "type": "string"
+        },
+        "rateType": {
+          "type": "string"
+        }
+      }
+    },
+    "cetRateInfo": {
       "type": "string"
+    },
+    "amortizationType": {
+      "type": "string"
+    },
+    "additionalTaxInformation": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "taxId": {
+          "type": "string"
+        },
+        "taxValue": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "taxDueDate": {
+          "type": "string"
+        }
+      }
+    },
+    "chargeInformation": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "chargeAmount": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "chargeDueDate": {
+          "type": "string"
+        }
+      }
     }
   }
 }
