@@ -57,7 +57,7 @@
         }
       }
     },
-    "debitTotalAmount": {
+    "totalDebitAmount": {
       "type": "array",
       "items": {
         "type": "object",
@@ -74,10 +74,10 @@
     "operationTerms": {
       "type": "object",
       "properties": {
-        "totalOfQuotas": {
+        "totalOfInstallments": {
           "type": "string"
         },
-        "remainingQuotas": {
+        "remainingInstallments": {
           "type": "string"
         }
       }
@@ -85,21 +85,21 @@
     "operationQuotaInformation": {
       "type": "object",
       "properties": {
-        "numberOfOpenQuotas": {
+        "numberOfOpenInstallments": {
           "type": "string"
         },
-        "numberOfPaidQuotas": {
+        "numberOfPaidInstallments": {
           "type": "string"
         },
-        "numberOfUnpayedQuotas": {
+        "numberOfUnpayedInstallments": {
           "type": "string"
         }
       }
     },
-    "operationQuotaValueInformation": {
+    "operationInstallmentsValueInformation": {
       "type": "object",
       "properties": {
-        "lastPaidQuotaAmount": {
+        "lastPaidInstallmentsAmount": {
           "type": "string"
         },
         "openQuotaAmount": {
