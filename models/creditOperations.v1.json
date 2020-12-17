@@ -1,0 +1,120 @@
+{
+  "title": "creditOperation",
+  "type": "object",
+  "properties": {
+    "creditModality": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "listOfModality": {
+          "type": "array",
+          "items": {}
+        },
+        "payrollPartyId": {
+          "type": "string"
+        }
+      }
+    },
+    "contractNumber": {
+      "type": "string"
+    },
+    "acquisitionDate": {
+      "type": "string"
+    },
+    "operationTotalAmount": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        }
+      }
+    },
+    "operationEndDate": {
+      "type": "string"
+    },
+    "listOfPayments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "paymentPeriodicity": {
+            "type": "string"
+          },
+          "listOfDueDates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "firstInstallmentDueDate": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "debitTotalAmount": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "operationTerms": {
+      "type": "object",
+      "properties": {
+        "totalOfQuotas": {
+          "type": "string"
+        },
+        "remainingQuotas": {
+          "type": "string"
+        }
+      }
+    },
+    "operationQuotaInformation": {
+      "type": "object",
+      "properties": {
+        "numberOfOpenQuotas": {
+          "type": "string"
+        },
+        "numberOfPaidQuotas": {
+          "type": "string"
+        },
+        "numberOfUnpayedQuotas": {
+          "type": "string"
+        }
+      }
+    },
+    "operationQuotaValueInformation": {
+      "type": "object",
+      "properties": {
+        "lastPaidQuotaAmount": {
+          "type": "string"
+        },
+        "openQuotaAmount": {
+          "type": "string"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "extraPaymentAmount": {
+          "type": "string"
+        }
+      }
+    },
+    "": {
+      "type": "string"
+    }
+  }
+}
